@@ -1,0 +1,249 @@
+<html>
+<head>
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/white.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>Web Animations with CSS3</section>
+            <section>
+                <section>What is animation?</section>
+                <section>
+                    <iframe src="https://giphy.com/embed/HEZLhRoxiHHK8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <blockquote>Animation is the process of making the illusion of motion and the illusion of change</blockquote>
+                </section>
+            </section>
+            <section>
+                Why is the animation important to UI & UX?
+                <!-- “it’s just a cool thing to add if we have time” -->
+            </section>
+            <section>
+                Animations can provide feedback and visibility of the system status.
+                <img src="https://cdn-images-1.medium.com/max/800/0*hkpLKQrxYXQ02s_b."> 
+            </section>
+            <section>
+                Guided focus between views
+                <img src="./change_view.gif" alt="" width="300px">
+            </section>
+            <section>
+                Improve the recognition of the actions applied to the object
+                <img src="./hover_anim.gif" alt="" width="300px">
+                <img src="./hover_anim1.gif" alt="" width="300px">
+            </section>
+            <section>
+                Reduce the cognitive Load
+                <img src="./cogn_load.jpg" alt="" width="500px">
+            </section>
+            <section>
+                Distraction from what’s happening behind the scenes (like fetching content or loading the next view)
+                <img src="./distract_load.gif" alt="">
+            </section>
+            <section>
+                Calls atention to something in the view
+                <img src="./atent.gif" alt="">
+            </section>
+            
+            <!-- Talk is cheap show me the code  -->
+            <section>
+                Doing CSS Transitions and Animations
+            </section>
+            <section>
+                Transitions in CSS3
+                <div class="cont">
+                    <div class="trans facd3d"></div>
+                </div>
+                
+                <pre>
+                    <code>
+                        left: 0;
+                        transform: rotate(0deg);
+                        -webkit-transition: 1s;
+                    </code>
+                </pre>
+                
+                <pre>
+                    <code>
+                        left: 600px;
+                        transform: rotate(360deg);
+                        -webkit-transition: 1s;
+                    </code>
+                </pre>
+                <script>
+                    var x = document.querySelector('.trans');
+                    x.onclick = function(e) {
+                        x.classList.toggle('transed');
+                    };
+                </script>                
+            </section>
+            <section>
+                Animations in CSS3
+                
+                <div class="cont">
+                    <div class="block facd3d"></div>
+                </div>
+                <script>
+                    var x = document.querySelector('.block');
+                    x.onclick = function(e) {
+                        x.classList.toggle('move');
+                    };
+                </script>
+                <pre><code data-trim data-noescape>
+                    .move {animation: anim2 ease-in-out 3s infinite alternate; }
+                    @keyframes anim2
+                    {
+                        from {left: 0px;   transform: scale(1.0) rotate(0deg)   }
+                        50%  {left: 250px; transform: scale(0.8) rotate(10deg)  }
+                        to   {left: 500px; transform: scale(1.2) rotate(-20deg) }
+                    }
+                </code></pre>
+            </section>
+            <section>
+                2D geometric forms in CSS3
+                <div class="tdg">
+                    <div class="facd2d item1"></div>
+                    <div class="facd2d item2"></div>
+                    <div class="facd2d item3"></div>
+                </div>
+                <div class="tdg">
+                    <pre><code>transform: rotate(0deg, 0deg)</code></pre>
+                    <pre><code>transform: scale(0)</code></pre>
+                    <pre><code>transform: skew(0deg, 0deg)</code></pre>
+                </div>
+            </section>
+            <section>
+                1. CSS3 Transitions
+                <pre><code>
+                    -webkit-transition:
+                    -webkit-transition-delay:
+                    -webkit-transition-duration:
+                    -webkit-transition-timing-function:
+                    -webkit-transition-property:
+                </code></pre>
+                
+                2. CSS3 Animations
+                <pre><code>
+                    -webkit-animation:
+                    -webkit-animation-delay / duration / timing-function:
+                    -webkit-animation-name: foo => @keyframes foo { from {} to {}}
+                    -webkit-animation-direction:
+                    -webkit-animation-fill-mode:
+                    -webkit-animation-iteration-count:
+                </code></pre>
+                
+                3. CSS3 Transforms in 2D
+                <pre><code>-webkit-transform: rotate / scale / skew / translate / matrix</code></pre>
+            </section>
+            <section>
+                3D Transforms in CSS3
+            </section>
+            <section>   
+                3D geometric Transforms
+                <div class="scene">
+                    <div class="container">
+                        <div class="el1 facd3d"></div>
+                        <div class="el2 facd3d"></div>
+                    </div>
+                </div>
+                translateX, Y, Z,     rotateX, Y, Z,     matrix3d
+                <pre><code>
+                    -webkit-transform: translateZ(150px)  /* first picture */
+                    -webkit-transform: translateZ(-150px) /* second picture */
+                    -webkit-transform: rotateY(360deg)    /* their container */ 
+                </code></pre>
+            </section>
+            <section>
+                Perspective
+                <div class="scene_wrapper">
+                    <div class="container">
+                        <div class="el1 facd3d"></div>
+                        <div class="el2 facd3d"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <img src="./perspective.png" alt="">
+            </section>
+            <section>
+                transform-style property
+                <div class="scene">
+                    <div class="container_wrapper">
+                        <div class="el1 facd3d"></div>
+                        <div class="el2 facd3d"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                transform-style property
+                <div class="scene">
+                    <div class="container">
+                        <div class="el1 facd3d"></div>
+                        <div class="el2 facd3d"></div>
+                        <div class="el3 facd3d"></div>
+                        <div class="el4 facd3d"></div>
+                        <div class="el5 facd3d"></div>
+                        <div class="el6 facd3d"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <pre><code>
+                    .SCENE {
+                        -webkit-perspective: 1000px;
+                        width: 600px;
+                        height: 340px;
+                    }
+                    .OBJECT {
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .FACE {
+                        position: absolute;
+                        left: 165px;
+                        top: 15px;
+                    }
+                    .FACE.im1 { -webkit-transform: translateZ(150px); }
+                    .FACE.im2 { -webkit-transform: translateZ(-150px); }
+                    .FACE.im3 { -webkit-transform: translateX(150px) rotateY(90deg);}
+                    .FACE.im4 { -webkit-transform: translateX(-150px) rotateY(-90deg);}
+                    .FACE.im5 { -webkit-transform: translateY(150px) rotateX(90deg);}
+                    .FACE.im6 { -webkit-transform: translateY(-150px) rotateX(-90deg);}
+                </code></pre>
+            </section>
+            <section>
+                <div class="scene">
+                    <div class="container">
+                        <div class="el1 facd3d"></div>
+                        <div class="el2 facd3d"></div>
+                        <div class="el3 facd3d"></div>
+                        <div class="el4 facd3d"></div>
+                        <div class="el5 facd3d"></div>
+                        <div class="el6 facd3d"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <ul>
+                    <li>https://www.nngroup.com/articles/minimize-cognitive-load/</li>
+                    <li>https://www.slideshare.net/CrowChick/animation-and-the-future-of-ux-33573726</li>
+                    <li>https://material.io/guidelines/motion/material-motion.html#</li>
+                    <li>https://medium.com/lateral-view/why-is-motion-design-so-important-to-user-experience-50110ba4b5e1</li>
+                    <li>https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="reveal/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // autoPlayMedia: true,
+            slideNumber: true,
+            history: true
+        });
+    </script>
+</body>
+</html>
