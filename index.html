@@ -1,13 +1,17 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="reveal/css/reveal.css">
     <link rel="stylesheet" href="reveal/css/theme/white.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
-            <section>Web Animations with CSS3</section>
+            <section>
+                Web Animations with CSS3
+            </section>
             <section>
                 <section>What is animation?</section>
                 <section>
@@ -21,30 +25,30 @@
             </section>
             <section>
                 Animations can provide feedback and visibility of the system status.
-                <img src="https://cdn-images-1.medium.com/max/800/0*hkpLKQrxYXQ02s_b."> 
+                <img src="https://cdn-images-1.medium.com/max/800/0*hkpLKQrxYXQ02s_b.">
             </section>
             <section>
                 Guided focus between views
-                <img src="./change_view.gif" alt="" width="300px">
+                <img src="./images/change_view.gif" alt="" width="300px">
             </section>
             <section>
                 Improve the recognition of the actions applied to the object
-                <img src="./hover_anim.gif" alt="" width="300px">
-                <img src="./hover_anim1.gif" alt="" width="300px">
+                <img src="./images/hover_anim.gif" alt="" width="300px">
+                <img src="./images/hover_anim1.gif" alt="" width="300px">
             </section>
             <section>
                 Reduce the cognitive Load
-                <img src="./cogn_load.jpg" alt="" width="500px">
+                <img src="./images/cogn_load.jpg" alt="" width="500px">
             </section>
             <section>
                 Distraction from what’s happening behind the scenes (like fetching content or loading the next view)
-                <img src="./distract_load.gif" alt="">
+                <img src="./images/distract_load.gif" alt="">
             </section>
             <section>
                 Calls atention to something in the view
-                <img src="./atent.gif" alt="">
+                <img src="./images/atent.gif" alt="">
             </section>
-            
+
             <!-- Talk is cheap show me the code  -->
             <section>
                 Doing CSS Transitions and Animations
@@ -54,7 +58,7 @@
                 <div class="cont">
                     <div class="trans facd3d"></div>
                 </div>
-                
+
                 <pre>
                     <code>
                         left: 0;
@@ -62,7 +66,7 @@
                         -webkit-transition: 1s;
                     </code>
                 </pre>
-                
+
                 <pre>
                     <code>
                         left: 600px;
@@ -72,20 +76,20 @@
                 </pre>
                 <script>
                     var x = document.querySelector('.trans');
-                    x.onclick = function(e) {
+                    x.onclick = function (e) {
                         x.classList.toggle('transed');
                     };
-                </script>                
+                </script>
             </section>
             <section>
                 Animations in CSS3
-                
+
                 <div class="cont">
                     <div class="block facd3d"></div>
                 </div>
                 <script>
                     var x = document.querySelector('.block');
-                    x.onclick = function(e) {
+                    x.onclick = function (e) {
                         x.classList.toggle('move');
                     };
                 </script>
@@ -120,9 +124,7 @@
                     -webkit-transition-duration:
                     -webkit-transition-timing-function:
                     -webkit-transition-property:
-                </code></pre>
-                
-                2. CSS3 Animations
+                </code></pre> 2. CSS3 Animations
                 <pre><code>
                     -webkit-animation:
                     -webkit-animation-delay / duration / timing-function:
@@ -130,15 +132,13 @@
                     -webkit-animation-direction:
                     -webkit-animation-fill-mode:
                     -webkit-animation-iteration-count:
-                </code></pre>
-                
-                3. CSS3 Transforms in 2D
+                </code></pre> 3. CSS3 Transforms in 2D
                 <pre><code>-webkit-transform: rotate / scale / skew / translate / matrix</code></pre>
             </section>
             <section>
                 3D Transforms in CSS3
             </section>
-            <section>   
+            <section>
                 3D geometric Transforms
                 <div class="scene">
                     <div class="container">
@@ -146,7 +146,7 @@
                         <div class="el2 facd3d"></div>
                     </div>
                 </div>
-                translateX, Y, Z,     rotateX, Y, Z,     matrix3d
+                translateX, Y, Z, rotateX, Y, Z, matrix3d
                 <pre><code>
                     -webkit-transform: translateZ(150px)  /* first picture */
                     -webkit-transform: translateZ(-150px) /* second picture */
@@ -163,7 +163,7 @@
                 </div>
             </section>
             <section>
-                <img src="./perspective.png" alt="">
+                <img src="./images/perspective.png" alt="">
             </section>
             <section>
                 transform-style property
@@ -239,11 +239,12 @@
     </div>
     <script src="reveal/js/reveal.js"></script>
     <script>
-        Reveal.initialize({
-            // autoPlayMedia: true,
-            slideNumber: true,
-            history: true
-        });
+                    Reveal.initialize({
+                        // autoPlayMedia: true,
+                        slideNumber: true,
+                        history: true
+                    });
     </script>
 </body>
+
 </html>
