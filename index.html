@@ -9,83 +9,120 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <section>
-                Web Animations with CSS3
+            <!-- 1-Begin -->
+            <section data-background-color="#557cf2">
+                <h1>Web Animations with CSS3</h1>
             </section>
+            
+            <section data-background-color="#3b8aff">
+                <h1>Who am i?</h1>
+                <br>
+                <h2 class="">Weliton</h2>
+                <h2 class="lin_tro"><i>Nene</i></h2>
+                <h2 class="lin_tro"><i>Dilbert</i></h2>
+                <img src="images/dibl.jpeg" alt="">
+            </section>
+            <!-- 2-Whats animation -->
             <section>
-                <section>What is animation?</section>
+                <section>
+                    <h1>What is animation?</h1>
+                </section>
                 <section>
                     <iframe src="https://giphy.com/embed/HEZLhRoxiHHK8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                     <blockquote>Animation is the process of making the illusion of motion and the illusion of change</blockquote>
                 </section>
             </section>
+
+            <!-- 3-Why is important -->
             <section>
-                Why is the animation important to UI & UX?
+                <h1>Why is the animation important to UI & UX?</h1>
                 <!-- “it’s just a cool thing to add if we have time” -->
             </section>
+
+            <!-- 4-1st Animations provide feedback -->
             <section>
-                Animations can provide feedback and visibility of the system status.
+                <h2>Animations can provide feedback and visibility of the system status.</h2>
                 <img src="https://cdn-images-1.medium.com/max/800/0*hkpLKQrxYXQ02s_b.">
             </section>
+
+            <!-- 5-2nd Guided focus between views-->
             <section>
-                Guided focus between views
+                <h2>Guided focus between views</h2>
                 <img src="./images/change_view.gif" alt="" width="300px">
             </section>
+
+            <!-- 6-3rd Improve recognition -->
             <section>
-                Improve the recognition of the actions applied to the object
+                <h2>Improve the recognition of the actions applied to the object</h2>
                 <img src="./images/hover_anim.gif" alt="" width="300px">
                 <img src="./images/hover_anim1.gif" alt="" width="300px">
             </section>
+
+            <!-- 7-4th Reduce load-->
             <section>
-                Reduce the cognitive Load
+                <h2>Reduce the cognitive Load</h2>
                 <img src="./images/cogn_load.jpg" alt="" width="500px">
             </section>
+
+            <!-- 8-5th Distractions -->
             <section>
-                Distraction from what’s happening behind the scenes (like fetching content or loading the next view)
+                <h2>Distraction from what’s happening behind the scenes (like fetching content or loading the next view)</h2>
                 <img src="./images/distract_load.gif" alt="">
             </section>
+
+            <!-- 9-6th Calls atention-->
             <section>
-                Calls atention to something in the view
+                <h2>Calls atention to something in the view</h2>
                 <img src="./images/atent.gif" alt="">
             </section>
 
-            <!-- Talk is cheap show me the code  -->
+            <!-- 10-7th css transitions intro  -->
             <section>
-                Doing CSS Transitions and Animations
+                <h1>Doing CSS Transitions and Animations</h1>
             </section>
+
+            <!-- 11- Transitions in css3-->
             <section>
-                Transitions in CSS3
-                <div class="cont">
-                    <div class="trans facd3d"></div>
+                <h2>Transitions in CSS3</h2>
+                <div class="slide_11_blc">
+                    <div class="cont">
+                        <div class="trans facd3d"></div>
+                    </div>
                 </div>
 
-                <pre>
-                    <code>
-                        left: 0;
-                        transform: rotate(0deg);
-                        -webkit-transition: 1s;
-                    </code>
-                </pre>
+                <div class="slide_11">
+                    <pre>
+                        <code>
+left: 0;
+transform: rotate(0deg);
+-webkit-transition: 1s;
+                        </code>
+                    </pre>
 
-                <pre>
-                    <code>
-                        left: 600px;
-                        transform: rotate(360deg);
-                        -webkit-transition: 1s;
-                    </code>
-                </pre>
+                    <pre>
+                        <code>
+left: 600px;
+transform: rotate(360deg);
+-webkit-transition: 1s;
+                        </code>
+                    </pre>
+                </div>
                 <script>
-                    var x = document.querySelector('.trans');
-                    x.onclick = function (e) {
-                        x.classList.toggle('transed');
+                    var y = document.querySelector('.trans');
+                    y.onclick = function (e) {
+                        y.classList.toggle('transed');
                     };
                 </script>
             </section>
-            <section>
-                Animations in CSS3
 
-                <div class="cont">
-                    <div class="block facd3d"></div>
+            <!-- 12- Animations in css3-->
+            <section>
+                <h2>Animations in CSS3</h2>
+
+                <div class="slide_11_blc">
+                    <div class="cont">
+                        <div class="block facd3d"></div>
+                    </div>
                 </div>
                 <script>
                     var x = document.querySelector('.block');
@@ -94,17 +131,19 @@
                     };
                 </script>
                 <pre><code data-trim data-noescape>
-                    .move {animation: anim2 ease-in-out 3s infinite alternate; }
-                    @keyframes anim2
-                    {
-                        from {left: 0px;   transform: scale(1.0) rotate(0deg)   }
-                        50%  {left: 250px; transform: scale(0.8) rotate(10deg)  }
-                        to   {left: 500px; transform: scale(1.2) rotate(-20deg) }
-                    }
+.move {animation: anim2 ease-in-out 3s infinite alternate; }
+@keyframes anim2
+{
+    from {left: 0px;   transform: scale(1.0) rotate(0deg)   }
+    50%  {left: 250px; transform: scale(0.8) rotate(10deg)  }
+    to   {left: 500px; transform: scale(1.2) rotate(-20deg) }
+}
                 </code></pre>
             </section>
+
+            <!-- 13-2D geometric forms -->
             <section>
-                2D geometric forms in CSS3
+                <h2>2D geometric forms in CSS3</h2>
                 <div class="tdg">
                     <div class="facd2d item1"></div>
                     <div class="facd2d item2"></div>
@@ -116,67 +155,85 @@
                     <pre><code>transform: skew(0deg, 0deg)</code></pre>
                 </div>
             </section>
-            <section>
-                1. CSS3 Transitions
+
+            <!--14-CSS3 Transitions -->
+            <section class="slide_14">
+                <h4>1. CSS3 Transitions</h4>
                 <pre><code>
-                    -webkit-transition:
-                    -webkit-transition-delay:
-                    -webkit-transition-duration:
-                    -webkit-transition-timing-function:
-                    -webkit-transition-property:
-                </code></pre> 2. CSS3 Animations
+-webkit-transition:
+-webkit-transition-delay:
+-webkit-transition-duration:
+-webkit-transition-timing-function:
+-webkit-transition-property:
+                </code></pre>
+                <h4>2. CSS3 Animations</h4>
                 <pre><code>
-                    -webkit-animation:
-                    -webkit-animation-delay / duration / timing-function:
-                    -webkit-animation-name: foo => @keyframes foo { from {} to {}}
-                    -webkit-animation-direction:
-                    -webkit-animation-fill-mode:
-                    -webkit-animation-iteration-count:
-                </code></pre> 3. CSS3 Transforms in 2D
-                <pre><code>-webkit-transform: rotate / scale / skew / translate / matrix</code></pre>
+-webkit-animation:
+-webkit-animation-delay / duration / timing-function:
+-webkit-animation-name: foo => @keyframes foo { from {} to {}}
+-webkit-animation-direction:
+-webkit-animation-fill-mode:
+-webkit-animation-iteration-count:
+                </code></pre>
+                <h4>3. CSS3 Transforms in 2D</h4>
+<pre><code>-webkit-transform: rotate / scale / skew / translate / matrix</code></pre>
             </section>
+
+            <!-- 15-3D Transforms intro-->
             <section>
-                3D Transforms in CSS3
+                <h1>3D Transforms in CSS3</h1>
             </section>
+
+            <!-- 16-3d geometric transforms -->
             <section>
-                3D geometric Transforms
-                <div class="scene">
-                    <div class="container">
+                <h2>3D geometric Transforms</h2>
+                <div class="scene slide_14_blc">
+                    <div class="container css3_transf">
                         <div class="el1 facd3d"></div>
                         <div class="el2 facd3d"></div>
                     </div>
                 </div>
-                translateX, Y, Z, rotateX, Y, Z, matrix3d
+                <h4>translateX, Y, Z, rotateX, Y, Z, matrix3d</h4>
                 <pre><code>
-                    -webkit-transform: translateZ(150px)  /* first picture */
-                    -webkit-transform: translateZ(-150px) /* second picture */
-                    -webkit-transform: rotateY(360deg)    /* their container */ 
+-webkit-transform: translateZ(150px)  /* first picture */
+-webkit-transform: translateZ(-150px) /* second picture */
+-webkit-transform: rotateY(360deg)    /* their container */ 
                 </code></pre>
             </section>
+
+            <!-- 17- perspective-->
             <section>
-                Perspective
-                <div class="scene_wrapper">
-                    <div class="container">
+                <h2>Perspective</h2>
+                <div class="scene_wrapper slide_14_blc">
+                    <div class="container perspective">
                         <div class="el1 facd3d"></div>
                         <div class="el2 facd3d"></div>
                     </div>
                 </div>
             </section>
+
+            <!--18- perspective image-->
             <section>
                 <img src="./images/perspective.png" alt="">
             </section>
+
+            <!--19- transform-style flat-->
             <section>
-                transform-style property
-                <div class="scene">
-                    <div class="container_wrapper">
+                <h2>transform-style property</h2>
+                <div class="scene slide_14_blc">
+                    <div class="container cont_flat">
                         <div class="el1 facd3d"></div>
                         <div class="el2 facd3d"></div>
                     </div>
                 </div>
+
+                <pre><code>transform-style: flat;</code></pre>
             </section>
+
+            <!--20- transform-style preserve-3d-->
             <section>
-                transform-style property
-                <div class="scene">
+                <h2>transform-style property</h2>
+                <div class="scene slide_14_blc">
                     <div class="container">
                         <div class="el1 facd3d"></div>
                         <div class="el2 facd3d"></div>
@@ -186,37 +243,42 @@
                         <div class="el6 facd3d"></div>
                     </div>
                 </div>
+                <pre><code>transform-style: preserve-3d;</code></pre>
             </section>
+
+            <!-- 21 final code -->
             <section>
-                <pre><code>
-                    .SCENE {
-                        -webkit-perspective: 1000px;
-                        width: 600px;
-                        height: 340px;
-                    }
-                    .OBJECT {
-                        -webkit-transform-style: preserve-3d;
-                        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                    }
-                    .FACE {
-                        position: absolute;
-                        left: 165px;
-                        top: 15px;
-                    }
-                    .FACE.im1 { -webkit-transform: translateZ(150px); }
-                    .FACE.im2 { -webkit-transform: translateZ(-150px); }
-                    .FACE.im3 { -webkit-transform: translateX(150px) rotateY(90deg);}
-                    .FACE.im4 { -webkit-transform: translateX(-150px) rotateY(-90deg);}
-                    .FACE.im5 { -webkit-transform: translateY(150px) rotateX(90deg);}
-                    .FACE.im6 { -webkit-transform: translateY(-150px) rotateX(-90deg);}
+                <pre class="pre_final"><code class="code_final">
+.SCENE {
+    -webkit-perspective: 1000px;
+    width: 600px;
+    height: 340px;
+}
+.OBJECT {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.FACE {
+    position: absolute;
+    left: 165px;
+    top: 15px;
+}
+.FACE.im1 { -webkit-transform: translateZ(150px); }
+.FACE.im2 { -webkit-transform: translateZ(-150px); }
+.FACE.im3 { -webkit-transform: translateX(150px) rotateY(90deg);}
+.FACE.im4 { -webkit-transform: translateX(-150px) rotateY(-90deg);}
+.FACE.im5 { -webkit-transform: translateY(150px) rotateX(90deg);}
+.FACE.im6 { -webkit-transform: translateY(-150px) rotateX(-90deg);}
                 </code></pre>
             </section>
+
+            <!-- 22- final el-->
             <section>
-                <div class="scene">
-                    <div class="container">
+                <div class="scene slide_14_blc">
+                    <div class="container ">
                         <div class="el1 facd3d"></div>
                         <div class="el2 facd3d"></div>
                         <div class="el3 facd3d"></div>
@@ -226,6 +288,17 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Thx -->
+            <section data-background-color="#e75e57">
+                <style>
+                    .color {
+                        color: white !important;
+                    }
+                </style>
+                <h1 class="color">Danke!</h1>
+            </section>
+            <!-- references -->
             <section>
                 <ul>
                     <li>https://www.nngroup.com/articles/minimize-cognitive-load/</li>
