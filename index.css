@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i');
 
 h1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 54px !important;
+    font-family: 'Zilla Slab', serif !important;
+    font-size: 64px !important;
+    text-transform: none !important;
 }
 h2 {
     font-size: 44px !important;

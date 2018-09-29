@@ -8,12 +8,15 @@ O Dan Saffer, é um dos caras com mais background no mundo das microinterações
 <!-- Trabalhar melhor nessa explicação  -->
 Começando do início, vamos entender o que são as microinterações.
 Uma microinteração é um momento contido de um produto que gira em torno de um único caso de uso. 
+Ou seja, em uma interface ela representa uma pequena task como exemplo, fazer o login, selecionar uma opcao e talvez o mais famoso de todos, o like do facebook, instagram ou twitter. 
 
 <!-- Poderia citar exemplos nesse aqui -->
 Micro interações são os detalhes funcionais e interativos de um produto.
 Estes detalhes podem facilitar o contato com o produto, tornar mais prazeroso, mesmo que não lembremos conscientemente.
+Além disso é possivel recolher dados sobre estas interacões com o usuário e também ajuda a marca a firmar sua identidade, de forma significante.
 
 <!-- Utilizar uma foto ou quem sabe encontrar pesquisas que revelem o ponto que queremos defender -->
+<!-- QUOTE  -->
 A diferença entre um produto que você ama e um produto que você tolera são muitas vezes as microinterações que você possui.
 
 <!-- Eh melhor uma introdução do porque as micro interações são boas para o que estão  sendo usadas. -->
@@ -28,6 +31,7 @@ Visualizar ou criar um pequeno pedaço de conteúdo, como uma mensagem de status
 Ativar ou desativar uma função
 
 <!-- Isso devia ser uma quote, apenas. -->
+<!-- QUOTE -->
 Se as microinterações são ruins, as features principais, não importa o quão bem feitas sejam, serão cercadas por dor e frustração. O design do seu produto é tão bom quanto a sua menor parte.
 
 <!-- Aqui é aquela segunda parte, até então fala-se apenas de teoria, aqui aplica-se a prática -->
